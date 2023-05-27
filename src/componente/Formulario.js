@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState } from 'react'
 import { Modal, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, View, Button, Pressable, Alert } from 'react-native'
 
-const Formulario = ({ modalVisible, setModalVisible, setPacientes, close }) => {
+const Formulario = ({modalVisible, setModalVisible, pacientes, setPacientes, close }) => {
 
     const [paciente, setPaciente] = useState('')
     const [propietario, setPropietario] = useState('')
@@ -29,7 +29,7 @@ const Formulario = ({ modalVisible, setModalVisible, setPacientes, close }) => {
         }
        
 
-        setPacientes([...paciente, nuevoPaciente])
+        setPacientes([...pacientes, nuevoPaciente])
 
         //Se cambia el estado de la modal visible para cerrar y volver al inicio
         setModalVisible(!modalVisible)

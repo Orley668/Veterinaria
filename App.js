@@ -78,9 +78,8 @@ const App = () => {
       <Formulario
         modalVisible={modalVisible}
         setModalVisible={setModalVisible}
-        setPacientes={setPacientes}
         pacientes={pacientes}
-       
+        setPacientes={setPacientes}
         close={cerrar}
       />
       </ScrollView>
